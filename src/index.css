@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face {
+  font-family: "Futura";
+  src: url("/fonts/futura-bk-bt.ttf");
+} */
+
+#root {
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/*? for input number remove arrows */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+mark {
+  background-color: yellow; /* Or any color you prefer */
+  color: black; /* Text color */
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/*? for input number remove clock */
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  background: none;
+  display: none;
+}
+
+ol {
+  list-style: decimal;
+  padding-left: 2rem;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 1rem;
+}
