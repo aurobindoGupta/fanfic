@@ -11,12 +11,14 @@ import {
 import Dashboard from "./containers/Dashboard/Dashboard.tsx";
 import Layout from "./layout/Layout.tsx";
 import ChapterView from "./containers/ChapterView/ChapterView.tsx";
+import UploadChapter from "./containers/Admin/UploadChapter/UploadChapter.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout/>}>
       <Route path="" element={<Dashboard />} />
       <Route path="chapterView/" element={<ChapterView />} />
+      <Route path="uploadChap/" element={<UploadChapter />} />
     </Route>
   )
 );

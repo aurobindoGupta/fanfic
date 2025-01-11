@@ -57,3 +57,9 @@ ul {
   list-style: disc;
   padding-left: 1rem;
 }
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
