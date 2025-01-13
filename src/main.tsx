@@ -8,16 +8,18 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import Dashboard from "./containers/Dashboard/Dashboard.tsx";
 import Layout from "./layout/Layout.tsx";
 import ChapterView from "./containers/ChapterView/ChapterView.tsx";
 import UploadChapter from "./containers/Admin/UploadChapter/UploadChapter.tsx";
+import ClientDashboard from "./containers/Dashboard/ClientDashboard.tsx";
+import ChapterListView from "./containers/Dashboard/ChapterListView.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout/>}>
-      <Route path="" element={<Dashboard />} />
+    <Route path="/" element={<Layout />}>
+      <Route path="" element={<ClientDashboard />} />
       <Route path="chapterView/" element={<ChapterView />} />
+      <Route path="chapterList/:bookId" element={<ChapterListView />} />
       <Route path="uploadChap/" element={<UploadChapter />} />
     </Route>
   )
